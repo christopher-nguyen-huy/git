@@ -1,12 +1,7 @@
+# Shared
 [user]
 	name = Christopher Nguyen
 	email = christopher.nguyen.huy@gmail.com
-[core]
-	autocrlf = true
-	safecrlf = false
-	editor = 'C:/Program Files (x86)/Notepad++/notepad++.exe' -multiInst -notabbar -nosession -noPlugin
-[push]
-	default = matching
 [alias]
 	co = checkout
 	ci = commit
@@ -15,6 +10,22 @@
 	hist = log --pretty=format:'%h %ad | %s%d [%an]' --graph --date=short
 	type = cat-file -t
 	dump = cat-file -p
+[push]
+	default = matching
+[pull]
+	rebase = false
+
+# Unix
+[core]
+	autocrlf = true
+	safecrlf = false
+	editor = nano
+	
+# Windows
+[core]
+	autocrlf = true
+	safecrlf = false
+	editor = 'C:/Program Files (x86)/Notepad++/notepad++.exe' -multiInst -notabbar -nosession -noPlugin
 [diff]
 	tool = meld
 [difftool]
